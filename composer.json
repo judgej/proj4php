@@ -1,19 +1,44 @@
 {
-    "name": "jsor/proj4php",
+    "name": "proj4php/proj4php",
+    "license": "LGPL-2.1",
     "type": "library",
-    "description": "LGPL public translation of proj4js for PHP",
-    "keywords": ["proj4", "projection", "geo"],
-    "homepage": "http://sourceforge.net/projects/proj4php/",
-    "license": "LGPL-3.0",
+    "description": "A PHP-Class for geographic coordinates transformation using proj4 definitions, thanks to a translation from Proj4JS",
+    "keywords": [
+        "geographic",
+        "coordinates",
+        "proj4",
+        "proj4js"
+    ],
+    "homepage": "https://github.com/proj4php/proj4php",
     "authors": [
-        {"name": "Rodrigue VILLETARD", "homepage": "http://sourceforge.net/users/gorghoa", "role": "developer"},
-        {"name": "Moquet", "homepage": "http://sourceforge.net/users/julien2512", "role": "developer"},
-        {"name": "Jan Sorgalla", "email": "jsorgalla@googlemail.com", "role": "maintainer"}
+        {
+            "name": "julien2512",
+            "email": "moquet.julien@gmail.com",
+            "homepage": "https://github.com/julien2512",
+            "role": "Developer"
+        },
+        {
+            "name": "Jason Judge",
+            "email": "jason.judge@academe.co.uk",
+            "homepage": "http://academe.co.uk",
+            "role": "Developer"
+        },
+        {
+            "name": "Nick Blackwell",
+            "email": "nickblackwell82@gmail.com",
+            "homepage": "https://people.ok.ubc.ca/nblackwe",
+            "role": "Developer"
+        }
     ],
     "require": {
-        "php": ">=5.1.0"
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
     },
     "autoload": {
-        "classmap": ["src/"]
+        "psr-4": {
+            "proj4php\\": "src/"
+        }
     }
 }
