@@ -99,8 +99,8 @@ class Sinu
 
     /**
      *
-     * @param type $p
-     * @return type 
+     * @param Point $p
+     * @return Point
      */
     public function inverse( $p ) {
         #$lat;

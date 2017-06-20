@@ -87,8 +87,8 @@ class Cea
     /**
      * Cylindrical Equal Area inverse equations--mapping x,y to lat/long
      * 
-     * @param type $p
-     * @return type 
+     * @param Point $p
+     * @return Point 
      */
     public function inverse( $p ) {
         $p->x -= $this->x0;
